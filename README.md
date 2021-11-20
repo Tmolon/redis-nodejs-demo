@@ -32,12 +32,12 @@ nodejs proje dosyamızı açtıktan sonra terminalden
 
 komutu ile redis paketimizi projeye ekliyoruz ve app.js isminde dosya oluştururuyoruz. app.js içinde aşağıdaki satırlar bizim redise bağlanmamızı sağlayacaktır.
 
-			const redis = require('redis')
-			const client = redis.createClient()
+	const redis = require('redis')
+	const client = redis.createClient()
 
-			client.on("error", error => {
-					console.log(error);
-			});
+	client.on("error", error => {
+		console.log(error);
+	});
 
 bu noktada akıla takılan soru "Biz ne ip nede port yazdık bu nasıl bağlandı?" olacaktır. Default olarak redisi 6379 üzerinden localhosttan ayaklandırdığımız için nodejs de default ip ve porttan hızlıca bağlanacaktır.
   
