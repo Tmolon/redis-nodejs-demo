@@ -11,7 +11,7 @@ Bu çalışmada temel düzeyde Docker üzerinde Redis ve nodejs kullanarak basit
 # 1- Docker üzerinde redisi ayaklandırma
 Kendi laptop veya sunucularımıza dockerı yükledikten sonra yapmamız gereken tek şey aşağıdaki komutu, komut satırından çalıştırmak.
   
-    docker run –name redisapp  -p 6379:6379 redis
+    docker run –-name redisapp -p 6379:6379 redis
 
 komuttanda anlaşılacağı üzere içerden ve dışardan 6379 portunu redise bağlanmak için kullanacağız. Konsoldan redis containerına girmek için,
   
