@@ -15,7 +15,7 @@ Kendi laptop veya sunucularımıza dockerı yükledikten sonra yapmamız gereken
 
 komuttanda anlaşılacağı üzere içerden ve dışardan 6379 portunu redise bağlanmak için kullanacağız. Konsoldan redis containerına girmek için,
   
-    docker exec -it <container id> bin/bash
+    docker exec -it <container id> redis-cli
 
 komutunu kullanabiliriz. Containera girdikten sonra "redis-cli" komutu ile redisin command line toolunu kullanmaya hazırız. Redis key value şeklinde depoplama yaptığından, 
 redise veri yazarken "SET <key> <value>" 
